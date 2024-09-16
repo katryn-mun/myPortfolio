@@ -1,0 +1,186 @@
+/* Everything */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #eeaeca, #94bbe9);
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size: 20px;
+}
+
+.home-body{
+    display: grid;
+    grid-template-rows: repeat(auto-fit minmax(300px, 1fr));
+}
+
+header{
+    font-size: 55px;
+    display: grid;
+    justify-items: center;
+    padding: 10px;
+}
+
+.white-text{
+    color: white;
+}
+
+
+/* positioning of the nav */
+.nav-bar{
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 8rem;
+    margin-bottom: 100px;
+}
+ul{
+    display: block;
+    padding: 2%;
+}
+
+li{
+    font-size: 50px;
+    margin-right: 10px;
+    list-style: none;
+    display: inline;
+    list-style-type: none;
+}
+
+li a{
+    color: black;
+}
+
+li a:hover{
+    color: white;
+}
+
+@media (max-width:600px) {
+    header{
+        font-size: 35px;
+    }
+    ul{
+        display: grid;
+    }
+
+    .nav-bar li{
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1300px) {
+    ul{
+        grid-template-columns: repeat(auto-fit, minmax(250, 1fr));
+    }
+    li{
+        font-size: 40px;
+    }
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+}
+#Kat_pic{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.tip-cal-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#tip-cal-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+ /* Positioning of the footer */
+footer{
+    background-color: #754c78;
+    text-align: center;
+    height: 70px;
+    padding: 10px;
+    position: relative;
+    margin-top: 300px;
+}
+
+/* Projects page*/
+
+.projects-body{
+    display: grid;
+    grid-template-rows: repeat(auto-fit minmax(300px, 1fr));
+}
+.project-card-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section-container{
+    margin: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 500px));
+    /* gap: 10px; */
+    font-size: 30px;
+}
+
+@media (max-width: 500px) {
+    .section-container{
+        margin-bottom: 150px;
+    }
+}
+.img-about-me{
+    width: 90%;
+}
+
+.img-index{
+    width: 100%;
+    height: auto;
+}
+
+/* About Me */
+
+.about-me-body{
+    display: grid;
+    grid-template-rows: repeat(auto-fit minmax(300px, 1fr));
+}
+
+/* Resume */
+.resume-content{
+    display: flex;
+    justify-content: center;
+}
+.resume-link{
+
+    font-size: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+
+/* My Contact */
+.my-content-section{
+    /* background-color: rgb(160, 158, 222); */
+    display: grid;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+}
